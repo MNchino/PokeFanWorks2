@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=utf-8"  http-equiv="content-type">
+    <link  rel="stylesheet"  href="style.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>        <![endif]-->
+    <title>Pokemon Fan Games</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+  <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+  <!--[if IE 8 ]><body class="ie8"><![endif]-->
+  <!--[if IE 9 ]><body class="ie9"><![endif]-->
+  <!--[if !IE]><!--><body><!--<![endif]-->
+    <header  style="background-color: rgb(66, 66, 66);">
+      <h1  style="text-align: left;"><a  id="Title"  style="font-family: Cambria; font-weight: bold;"
+           href="index.html">PokéFanWorks</a></h1>
+      <nav>
+        <ul  style="position: fixed; right: 0; border: 0;">
+          <li><a  href="index.php"  id="Title"  style="font-family: Cambria; font-weight: bold;">List</a></li>
+          <li><a  href="contact.html"  class="current"  style="font-family: Cambria; font-weight: bold;">Submit/Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1  style="padding-top: 100px; text-align: center;"><span  style="font-family: Cambria;">Add
+        a game!</span></h1>
+    <form  class="form"  style="text-align: center;" action="mail.php" method="POST"><br>
+      <br>
+      <br>
+      <p  class="name"> <label  for="name">Name</label><br>
+        <input  name="name"  id="name"  placeholder="Enter name Of game..."  type="text" required>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Description</label><br>
+        <input  name="description"  id="description"  placeholder="Enter description (50 character max!)"
+           type="text" required> </p>
+      <br>
+      <p  class="name"> <label  for="name">Version (Enter 0 if none)</label><br>
+        <input  name="version"  id="Version"  placeholder="Enter version..."  type="text" required>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Status</label><br>
+        <select  id="status"  name="status">
+          <option  value="ACTIVE">Active</option>
+          <option  value="ON_BREAK">On Break</option>
+          <option  value="ABANDONED">Abandoned</option>
+          <option  value="COMPLETED">Completed</option>
+        </select>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Medium</label><br>
+        <select  id="medium"  name="medium">
+          <option  value="RPGMXP">RPGMXP</option>
+          <option  value="ROM">ROM</option>
+          <option  value="OTHER">Other</option>
+        </select>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Fakemon</label><br>
+        <select  id="fakemon"  name="fakemon">
+          <option  value="MIXED">Mixed</option>
+          <option  value="LIMITED">Limited</option>
+          <option  value="ALL">All</option>
+          <option  value="NONE">None</option>
+          <option  value="UNKNOWN">Unknown</option>
+        </select>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Badges/MAX</label><br>
+        <input  name="badges"  id="badges"  placeholder="Current Badges..."  type="text" required><input
+           name="badgeMAX"  id="badgeMAX"  placeholder="Total Badges..."  type="text" required>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Logo URL</label><br>
+        <input  name="logo"  id="logo"  placeholder="Enter Logo URL..."  type="text" required>
+      </p>
+      <br>
+      <p  class="name"> <label  for="name">Social Media (Fill in what you can)</label><br>
+      </p>
+      <table  id="links"  style="margin: 0px auto;">
+        <tbody>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/twitter.png"></td>
+            <td  style="width: 30%;"><input  name="twitter"  id="twitter"  placeholder="Twitter link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/reddit.png"></td>
+            <td  style="width: 30%;"><input  name="reddit"  id="reddit"  placeholder="Reddit link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/facebook.png"></td>
+            <td  style="width: 30%;"><input  name="facebook"  id="facebook"  placeholder="Facebook link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/website.png"></td>
+            <td  style="width: 30%;"><input  name="website"  id="website"  placeholder="Website link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/tumblr.png"></td>
+            <td  style="width: 30%;"><input  name="tumblr"  id="tumblr"  placeholder="Tumblr link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/rc.png"></td>
+            <td  style="width: 30%;"><input  name="relicCastle"  id="rc"  placeholder="Relic Castle link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/pc.png"></td>
+            <td  style="width: 30%;"><input  name="pokeCommunity"  id="pc"  placeholder="PokeCommunity link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/pb.png"></td>
+            <td  style="width: 30%;"><input  name="pokeBeach"  id="pb"  placeholder="PokeBeach link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/pr.png"></td>
+            <td  style="width: 30%;"><input  name="pokemonReborn"  id="pr"  placeholder="Pokemon Reborn link..."
+                 type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/deviantart.png"></td>
+            <td  style="width: 30%;"><input  name="deviantArt"  id="deviantart"
+                 placeholder="Deviantart link..."  type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/soundcloud.png"></td>
+            <td  style="width: 30%;"><input  name="soundCloud"  id="soundcloud"
+                 placeholder="SoundCloud link..."  type="text"></td>
+          </tr>
+          <tr>
+            <td  style="width: 3%;"><img  id="linklogo"  style="width: 100%;"  src="images/discord.png"></td>
+            <td  style="width: 30%;"><input  name="discord"  id="discord"  placeholder="Discord invite link..."
+                 type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <p  class="name"> <label  for="name">Email (optional, for contacting
+          purposes only)</label><br>
+        <input  name="email"  id="name"  placeholder="Enter Email Address..."  type="text"><br><br>
+      </p>
+	  		
+			<style>
+    .capatcha {
+        text-align: center;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+</style>
+		<!--recaptcha-->	
+		<div class="g-recaptcha" data-sitekey="6Ld5SRQTAAAAAFx0By3QIeo6s_NPrd7s_B5MVvTs"  style="text-align: center;"></div>
+			
+      <p  class="submit"><br>
+        <br>
+        <input  value="Send"  type="submit">
+		</p>
+      
+    </form>
+    <h1  style="padding-top: 100px; text-align: center;"><span  style="font-family: Cambria;">Contact</span></h1>
+    <div  style="text-align: center;"><span  style="font-family: Cambria;"><br>
+        <br>
+        <br>
+        Have any Questions?  Issues?  Complaints?<br>
+        Did we misrepresent your game in any way? There is currently NO update
+        function.<br>
+        Did you see an ad on the site? Please tell us in detail! We don't want
+        any ads here :( </span><br>
+      <br>
+      Please use one of these methods to contact us!</div>
+    <div  id="secwrapper">
+      <div  style="text-align: center;">
+        <section  class="section">
+          <article><a> </a><a><img  style="width: 180px;"  href="https://twitter.com/bryanLroberts14"
+ src="images/email.png"></a>
+            <hr>
+            <p>Email pokefanworks@gmail.com</p>
+          </article>
+          <article><a> </a><a><img  style="width: 180px;"  href="https://twitter.com/bryanLroberts14"
+ src="images/twitter.png"></a>
+            <hr>
+            <p>Tweet to or Direct message <a  target="_blank"  href="https://twitter.com/MnChino">@MNchino</a>.
+              He might know something</p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <div  style="text-align: center;"><a  style="text-align: center;">We here
+        want to give as little bias as possible, and give every fan game a look.<br>
+        Games are everywhere. If there is someone's game I should add, or an
+        update I missed, even if its not yours, still tell us. <br>
+      </a></div>
+    <footer  style="background-color: rgb(66, 66, 66);">
+      <div  style="text-align: center;"> Pokemon and its trademarks are property
+        of GAME FREAK, the Pokemon Company International, and Nintendo.
+        PokeFanWorks does not claim nor intend any ownership over Pokemon or any
+        games shown.  Please support the official release, and buy the real
+        games.</div>
+		<p  style="text-align: center;">  <br>Website Template copyright &copy 2012 BoxPress by Youssef Nassim. All Rights Reserved. </p>
+    </footer>
+</body></html>

@@ -1,0 +1,532 @@
+@font-face {
+
+  font-family: "LeagueGothic";
+
+  font-style: normal;
+
+  font-weight: normal;
+  src: url("fonts/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/League_Gothic-webfont.woff") format("woff"), url("fonts/League_Gothic-webfont.ttf") format("truetype"), url("fonts/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
+}
+
+@font-face {
+
+  font-family: "SourceSansProLight";
+
+  font-style: normal;
+
+  font-weight: normal;
+  src: url("fonts/SourceSansPro-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Light-webfont.woff") format("woff"), url("fonts/SourceSansPro-Light-webfont.ttf") format("truetype"), url("fonts/SourceSansPro-Light-webfont.svg#SourceSansProLight") format("svg");
+}
+
+* {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  border-top-width: medium;
+  border-right-width: medium;
+  border-bottom-width: medium;
+  border-left-width: medium;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+
+body {
+  font-family: SourceSansProLight, Verdana, Arial, sans-serif;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+}
+
+header h1, nav, nav li {
+  display: inline-block;
+}
+
+header {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(193, 0, 33);
+}
+
+header h1 a {
+  font-family: LeagueGothic, Verdana, Arial, sans-serif;
+  color: white;  -webkit-text-decoration: none;
+  text-decoration: none;  -epub-text-transform: none;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 28px;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+
+#version {
+  color: white;
+  font-size: 10px;
+  position: relative;
+  top: 12px;
+  left: 122px;
+}
+
+nav {
+  position: absolute;
+  top: 32.8%;
+  left: 12.5%;
+}
+
+nav li a {
+  color: white;  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  margin-right: 12px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+nav li a:hover {
+  background-color: rgb(56, 56, 56);  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.current {
+  background-color: rgb(56, 56, 56);  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+section {
+  width: 100%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+#secwrapper {
+  padding-top: 20px;
+}
+
+article {
+  width: 180px;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: top;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(200, 200, 200);
+  border-right-color: rgb(200, 200, 200);
+  border-bottom-color: rgb(200, 200, 200);
+  border-left-color: rgb(200, 200, 200);
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;  -webkit-border-radius: 3px;
+  border-radius: 3px;  -webkit-box-shadow: 0px 2px 3px rgb(204, 204, 204);
+  box-shadow: 0px 2px 3px rgb(204, 204, 204);
+  display: inline-block;
+  background-color: white;
+}
+
+.readmore {
+  background-color: rgb(43, 175, 219);
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: white;  -webkit-text-decoration: none;
+  text-decoration: none;  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.readmore:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.media {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  color: white;  -webkit-text-decoration: none;
+  text-decoration: none;  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+article p {
+  margin-bottom: 7px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+}
+
+footer p {
+  margin-top: 5px;
+  margin-right: 5%;
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie #adbanner a, .old_ie article, .old_ie .readmore, .old_ie .reliccastle, .old_ie .community, .old_ie #sponsors a {
+  display: inline;
+}
+
+.readmore:hover {
+  background-color: rgb(43, 175, 219);
+}
+
+.readmore:hover {
+}
+
+.article {
+  font-family: Calibri;
+}
+
+.section {
+  font-family: Calibri;
+}
+
+#Title {
+  font-family: LeagueGothic, Verdana, Arial, sans-serif, Cambria;
+}
+
+#Menu {
+  position: relative;
+}
+
+.secton {
+  font-family: Calibri;
+}
+
+a {
+  background-color: transparent;
+}
+
+input, textarea {
+  font-family: "Calibri";
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(229, 229, 229);
+  border-right-color: rgb(229, 229, 229);
+  border-bottom-color: rgb(229, 229, 229);
+  border-left-color: rgb(229, 229, 229);
+  width: 60%;  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  height: 150px;
+  max-width: 60%;
+  line-height: 18px;
+}
+
+.small input {
+  width: 30%;
+}
+
+#Version {
+  width: 15%;
+}
+
+#name {
+  width: 40%;
+}
+
+#badges {
+  width: 10%;
+}
+
+#badgeMAX {
+  width: 10%;
+}
+
+#links {
+  width: 70%;
+  text-align: center;
+}
+
+#linklogo {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+#twitter {
+  width: 90%;
+}
+
+#reddit {
+  width: 90%;
+}
+
+#facebook {
+  width: 90%;
+}
+
+#website {
+  width: 90%;
+}
+
+#tumblr {
+  width: 90%;
+}
+
+#rc {
+  width: 90%;
+}
+
+#pc {
+  width: 90%;
+}
+
+#pb {
+  width: 90%;
+}
+
+#pr {
+  width: 90%;
+}
+
+#deviantart {
+  width: 90%;
+}
+
+#soundcloud {
+  width: 90%;
+}
+
+#discord {
+  width: 90%;
+}
+
+
+
+
+
+/* ***
+Bonzairob overrides!
+
+Note I made some HTML changes;
+	Badges are in a <div class="badges"> - you should only have one H1 on the page, and it should be the page title!
+	Generally spaced out the HTML because it was hard to read and find things
+	Everything with the font Cambria got a class called main-font instead; this is what gets styled here.
+	Generally got rid of where &nbsp; is spacing things out, because it fucks up on small browsers (like mobile). These get replaced with <div>s and whatnot.
+	Got rid of the <p> that was inside the <article>; it had no closing tag and is unnecessary anyway :)
+	It's <br/> not </br> - </ closes a tag, /> shows it's a single tag that doesn't need closing.
+	Added banner divs for the Completed/On Break stuff
+	Put some other things in divs that needed it :)
+
+	Generally it's a good idea to put as much in the css file and as little in style tags as possible.
+
+	If you're not already, you might consider using a php script where you put in the values for each bit and it spits out the html for you.
+	You could even order it by status, so the complete ones are listed first.
+	( array('status'=>'complete', 'medium'=>'rmxp', 'title'=>'Pokémon Death Black') - that sort of thing. )
+*** */
+body, .main-font, .section, input{
+	font-family: Cambria, Lucida Grande, Arial, sans-serif;
+}
+
+header h2 a {
+	/* just copied from above, but for an h2
+	looks like LeagueGothic doesn't support é :( */
+  font-family: LeagueGothic, Verdana, Arial, sans-serif;
+  color: white;  -webkit-text-decoration: none;
+  text-decoration: none;  -epub-text-transform: none;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 28px;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+
+
+.filter{
+	text-align:right;
+	padding-right:16px;
+}
+.filter input{
+	width:200px;
+}
+
+
+article{
+	overflow:hidden; /* stops the corners of the banner peekng out of the rounded corners of the article. */
+}
+.banner{
+	text-align:center;
+	font-size:16px;
+	padding: 4px 8px;
+	color: white;
+	width:180px; /* match article*/
+	margin-left:-7px;
+	margin-top:-7px; /* you can have negative margin but not padding */
+	margin-bottom:4px;
+}
+.banner-completed{
+	background: #5AC65F;
+}
+.banner-break{
+	background: #DDA713;
+}
+.banner-abandoned{
+	background: #900;
+}
+
+article.status-completed{
+	border: 1px solid #5AC65F;
+}
+article.status-break{
+	border: 1px solid #DDA713;
+}
+article.status-abandoned{
+	border: 1px solid #900;
+}
+
+
+
+
+
+.has-fakemon, .medium{
+	display:inline-block;
+	font-size:10px;
+	width:48%; /* 50% would break the line because of the spaces/newlines between them */
+	font-weight:bold;
+	margin-bottom:4px;
+}
+.has-fakemon{
+	text-align:left;
+	color:#C45555;
+}
+.medium{
+	text-align:right;
+}
+
+.has-fakemon img, .medium img{
+	height:16px !important;
+	width:auto !important;
+	vertical-align:middle;/* align in the middle instead of the font baseline; matters because we set line height earlier. Only works on images and display:inline-block; */
+}
+
+/* because the medium and fakemon icons are always in the same place, the viewer should understand they refer to the same thing
+so let's make it easier to read at a glance. */
+.fakemon-mixed{
+	/* make it yellow */
+	-webkit-filter: hue-rotate(60deg);
+	filter: hue-rotate(60deg);
+	/* honestly this is better to do with images - i'm just showing off. */
+}
+
+.fakemon-limited{
+	/* greener yellow */
+	-webkit-filter: hue-rotate(75deg);
+	filter: hue-rotate(75deg);
+}
+
+.fakemon-none{
+	/* back round to green */
+	-webkit-filter: hue-rotate(90deg);
+	filter: hue-rotate(90deg);
+}
+
+.fakemon-unknown{
+	/* grey */
+	-webkit-filter: saturate(0%);
+	filter: saturate(0%);
+	opacity:0.8;
+}
+
+
+
+
+
+.faded{
+	opacity:0.5;
+}
+
+.badges{
+	border:1px solid #ccc;
+	border-radius:4px;
+	padding-bottom:4px;
+	margin-top:4px;
+	margin-bottom:4px;
+	font-size:0; /* this removes any spaces between the images from the whitespace gaps */
+	line-height:16px; /* resets the line height back to normal again */
+}
+
+.badges-title{
+	border-bottom:1px solid #ccc;
+	padding:2px 4px;
+	color:#aaa;
+	font-size:10px;
+	text-transform:uppercase;
+	text-align:left;
+}
+.badges img{
+	margin-left:4px;
+	margin-right:4px;
+	margin-top:4px;
+	vertical-align:middle;
+}
+
+.media img{
+	max-height:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
